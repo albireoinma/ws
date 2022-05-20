@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <style>
+    div{
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id='main'></div>
+  <script>
+    let temp
+    for (let i=0;i<21;i++){
+
+      if(i<10){
+        temp = '000'+i.toString();
+      }
+      else{
+        temp = '00'+i.toString();
+      }
+      
+      document.getElementById("main").innerHTML += "<img src='" + temp + ".jpg'/>"
+    }
+  </script>
+</body>
+</html>
